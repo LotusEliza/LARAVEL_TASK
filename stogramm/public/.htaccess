@@ -4,8 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /~user3/task1
-
+    RewriteBase /~user3/stogramm
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 

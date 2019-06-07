@@ -11,5 +11,14 @@
 |
 */
 
-Route::get('/', {'Task1Controller@showHome'});
+Route::get('/', function()
+{
+	return View::make('hello');
+});
+
+Route::get('/auth/signup','AuthController@showSignupForm');
+Route::post('/auth/signup','AuthController@postSignupForm');
+
+Route::get('/auth/login','AuthController@showLoginForm');
+Route::post('/auth/login','AuthController@postLoginForm');
 
