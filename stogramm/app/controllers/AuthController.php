@@ -34,4 +34,10 @@ public function postLoginForm() {
 	return Redirect::action('AuthController@showLoginForm');
 	}
 
+public function logout(){
+
+	if(Auth::check()){Auth::logout();}
+	return Redirect::action('HomeController@showIndex');
+	}
+
 }
