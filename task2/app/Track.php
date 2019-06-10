@@ -11,6 +11,5 @@ class Track extends Model
     public function album()
     {
         return $this->belongsTo(Album::class, 'AlbumId', 'AlbumId');
-//        return $this->belongsTo('Album', 'AlbumId', 'AlbumId');
     }
 }

@@ -7,11 +7,6 @@ class Album extends Model
 {
     protected $table = 'Album';
     protected $primaryKey = 'AlbumId';
-//    public $timestamps = false;
-//    public function tracks()
-//    {
-//        return $this->hasMany('Track', 'AlbumId', 'AlbumId');
-//    }
 
     public function artist()
     {
@@ -22,5 +17,4 @@ class Album extends Model
     {
         return $this->hasMany(Track::class, 'AlbumId', 'AlbumId');
     }
-
 }
